@@ -13,7 +13,7 @@ function EventContent( { value, schedulerOptions } )
 
                 &nbsp;-&nbsp;
                 <span data-type="hour">
-                    { formatters['hh:ii'](value.end) }
+                    { formatters['hh:ii'](new Date(value.end.getTime() + diff * 60000)) }
                 </span>
 
             </div>
